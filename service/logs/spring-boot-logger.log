@@ -1,0 +1,26 @@
+2022-02-18 00:01:18,928 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication using Java 12.0.2-BellSoft on minhdh-ThinkPad-X250 with PID 136058 (/home/minhdh/Downloads/demo/target/classes started by minhdh in /home/minhdh/Downloads/demo)
+2022-02-18 00:01:18,950 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-02-18 00:01:20,193 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 00:01:20,266 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2022-02-18 00:01:20,846 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-02-18 00:01:20,854 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-02-18 00:01:20,855 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-02-18 00:01:20,855 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 00:01:20,935 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-02-18 00:01:20,936 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1858 ms
+2022-02-18 00:01:21,089 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 00:01:21,136 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 00:01:21,239 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 00:01:21,307 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-02-18 00:01:21,310 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-02-18 00:01:21,594 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-02-18 00:01:21,604 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-18 00:01:22,145 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 00:01:22,153 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 00:01:22,767 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 00:01:23,627 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-02-18 00:01:23,640 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 00:01:23,642 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: localhost:5672
+2022-02-18 00:01:23,671 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Created new connection: connectionFactory#10b2c1cf:0/SimpleConnection@1659d7d [delegate=amqp://root@127.0.0.1:5672/, localPort= 45840]
+2022-02-18 00:01:23,723 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 5.743 seconds (JVM running for 6.968)
+2022-02-18 00:01:41,052 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Waiting for workers to finish.

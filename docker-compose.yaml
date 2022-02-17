@@ -1,0 +1,81 @@
+version: '2'
+
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    hostname: "rabbit1"
+    container_name: 'tnm_rabbitmq'
+    environment:
+      - RABBITMQ_DEFAULT_USER=root
+      - RABBITMQ_DEFAULT_PASS=root
+    volumes:
+      - queue:/var/lib/rabbitmq
+  mysqldb:
+    image: mysql:5.7
+    container_name: 'tnm_mysql'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=tnm_test
+    volumes:
+      - db:/var/lib/mysql
+  batch-service:
+    depends_on:
+      - mysqldb
+      - rabbitmq
+    environment:
+      - MYSQL_HOST=mysqldb
+      - MYSQL_PORT=3306
+      - RABBIT_MQ_HOST=rabbitmq
+      - RABBIT_MQ_PORT=15672
+    volumes:
+      - data:/data
+      - logs:/logs
+    container_name: batch-service
+    build:
+      context: batch-processing
+      dockerfile: Dockerfile
+    image: batch-service:latest
+  task-assignment-service:
+    depends_on:
+      - mysqldb
+      - rabbitmq
+    environment:
+      - MYSQL_HOST=mysqldb
+      - MYSQL_PORT=3306
+      - RABBIT_MQ_HOST=rabbitmq
+      - RABBIT_MQ_PORT=15672
+    volumes:
+      - logs:/logs
+    container_name: task-assignment-service
+    build:
+      context: service
+      dockerfile: Dockerfile
+    image: task-assignment-service:latest
+    ports:
+      - "8080:8080"
+volumes:
+    db:
+      driver: local
+      driver_opts:
+        type: none
+        o: bind
+        device: ./db
+    queue:
+      driver: local
+      driver_opts:
+        type: none
+        o: bind
+        device: ./queue
+    logs:
+      driver: local
+      driver_opts:
+        type: none
+        o: bind
+        device: ./logs
+    data:
+      driver: local
+      driver_opts:
+        type: none
+        o: bind
+        device: ./data
+

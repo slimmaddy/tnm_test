@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+    <script src="./javascript.js"></script>
+  </head>
+  <body>
+    <button onclick="fetchFromAPI()">Fetch From API</button>
+    <br />
+    <br />
+    <table id="table">
+      <tr>
+        <th>Team ID</th>
+        <th>Task ID</th>
+      </tr>
+    </table>
+  </body>
+</html>

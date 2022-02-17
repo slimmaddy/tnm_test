@@ -1,0 +1,36 @@
+2022-02-17 21:08:20,034 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application v0.0.1-SNAPSHOT using Java 1.8.0_212 on e26379a7436e with PID 1 (/app/app.jar started by root in /app)
+2022-02-17 21:08:20,061 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-02-17 21:08:26,394 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-17 21:08:26,944 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 492 ms. Found 4 JPA repository interfaces.
+2022-02-17 21:08:29,638 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-02-17 21:08:29,675 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-02-17 21:08:29,677 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-02-17 21:08:29,678 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-17 21:08:29,821 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-02-17 21:08:29,823 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 9315 ms
+2022-02-17 21:08:30,434 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-17 21:08:30,542 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-17 21:08:30,789 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-17 21:08:30,971 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-02-17 21:08:30,980 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-02-17 21:08:31,639 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-02-17 21:08:31,673 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-17 21:08:33,045 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-17 21:08:33,059 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-17 21:08:34,756 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-17 21:08:36,387 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-02-17 21:08:36,414 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-17 21:08:36,418 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: rabbitmq:5672
+2022-02-17 21:08:36,504 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Created new connection: connectionFactory#b7c4869:0/SimpleConnection@4504d271 [delegate=amqp://root@172.27.0.3:5672/, localPort= 47302]
+2022-02-17 21:08:36,617 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 18.986 seconds (JVM running for 21.313)
+2022-02-17 21:09:19,299 INFO com.example.service.listener.MessageReceiver [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] Batch job done at: 1645132159008
+2022-02-17 21:09:19,882 INFO com.example.service.listener.MessageReceiver [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] Batch job done at: 1645132158899
+2022-02-17 21:09:19,886 INFO com.example.service.listener.MessageReceiver [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] Batch job done at: 1645132158917
+2022-02-17 21:09:43,232 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 21:09:43,232 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-02-17 21:09:43,234 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-02-17 21:09:52,612 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Waiting for workers to finish.
+2022-02-17 21:09:52,904 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Successfully waited for workers to finish.
+2022-02-17 21:09:52,934 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-17 21:09:52,941 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-02-17 21:09:52,959 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
