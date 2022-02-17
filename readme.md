@@ -6,7 +6,7 @@
 2. Environment
 - docker-compose: version > 1.27.3 (support relative path in driver-opts in docker-compose file) https://github.com/docker/compose/pull/7762
 3. Run
-- clear data in following directory: `db, data, queue, logs`
+- From current root directory. create 4 empty directory `db, data, queue, logs` for mounting data with container
 - Run _`docker-compose up -d`_
 - because services depend on mysql and rabbitmq, sometimes services start failed due to lately start up mysql/rabbitmq. Just rerun `docker-compose up -d`
 - copy content from `./java_assignment_log` dir to `./data` dir
